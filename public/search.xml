@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>设计模式</title>
+    <url>/2019/12/19/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<h1 id="创建型模式"><a href="#创建型模式" class="headerlink" title="创建型模式"></a>创建型模式</h1><h4 id="创建型模式隐藏了这些类的实例是如何被创建和放在一起，整个系统关于这些对象所知道的是由抽象类所定义接口。这样创新模式在创建了什么，谁创建它，它使怎么创建的，以及何时创建这些方面提供了很大的灵活性。"><a href="#创建型模式隐藏了这些类的实例是如何被创建和放在一起，整个系统关于这些对象所知道的是由抽象类所定义接口。这样创新模式在创建了什么，谁创建它，它使怎么创建的，以及何时创建这些方面提供了很大的灵活性。" class="headerlink" title="创建型模式隐藏了这些类的实例是如何被创建和放在一起，整个系统关于这些对象所知道的是由抽象类所定义接口。这样创新模式在创建了什么，谁创建它，它使怎么创建的，以及何时创建这些方面提供了很大的灵活性。"></a>创建型模式隐藏了这些类的实例是如何被创建和放在一起，整个系统关于这些对象所知道的是由抽象类所定义接口。这样创新模式在创建了什么，谁创建它，它使怎么创建的，以及何时创建这些方面提供了很大的灵活性。</h4><p><strong>简单工厂模式：</strong><br>面向对象的编程，并不是类越多越好，类的划分是分了封装，但是分类的基础是抽象，具有相同属性和功能的对象抽象集合才是类。</p>
+<p><strong>定义：</strong><br>将所有可能的存在的分支情况通过类的形式保存下来，然后创建一个工厂类，通过传入不同的参数产生不同的类对象。</p>
+<a id="more"></a>
+
+<p><strong>不足：</strong><br>首先需要提前知道所有的分支情况，</p>
+<ul>
+<li>如果分支情况过多，导致类过于太多。</li>
+<li>对于新的分支情况需要修改工厂类。</li>
+</ul>
+<p><strong>抽象工厂模式</strong>：</p>
+<p>提供一个创建一系列或相关依赖对象的接口，而无需指定它们具体的类。</p>
+<p><strong>建造者模式</strong>：</p>
+<p>将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。</p>
+<p><strong>工厂方法模式：</strong></p>
+<p>定义一个用于创建对象的接口，让子类决定实例化哪一个类，工厂模式使一个类的实例化延迟到其子类。</p>
+<p><strong>原型模式：</strong></p>
+<p>用原型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象。</p>
+<p><strong>单例模式：</strong></p>
+<p>保证一个类仅有一个实例，并提供一个访问它的全局访问点。</p>
+<h1 id="结构型模式"><a href="#结构型模式" class="headerlink" title="结构型模式"></a>结构型模式</h1><p><strong>适配器模式</strong>：</p>
+<p>将一个类的接口转换成客户希望的另外一个接口。适配器模式使得原本由于接口不兼容而不能一起工作的那些类可以一起工作。</p>
+<p><strong>桥接模式</strong>：</p>
+<p>将抽象部分与它的实现部分分离，使它们都可以独立地变化。</p>
+<p><strong>组合模式</strong>：</p>
+<p>将对象组合成树形结构以表示‘部分-整体’的层次结构，组合模式使得用户对单个对象和组合对象的使用具有一致性。</p>
+<p><strong>装饰模式</strong>：</p>
+<p>动态地给一个对象添加一些额外的职责。就增加功能来说，装饰模式相比生成子类更加灵活。</p>
+<p><strong>外观模式</strong>：</p>
+<p>为子系统中的一组接口提供一个一致的界面，外观模式定义了一个高层接口，这些接口使得这一子系统更加容易使用。</p>
+<p><strong>享元模式</strong>：</p>
+<p>为运用共享技术有效地支持大量细颗粒的对象。</p>
+<p><strong>代理模式</strong>：</p>
+<p>为其他对象提供一种代理以控制对这个对象的访问。</p>
+<h1 id="行为模式"><a href="#行为模式" class="headerlink" title="行为模式"></a>行为模式</h1><p><strong>观察者模式</strong>：</p>
+<p>定义对象间的一种一对多的依赖关系，当一个对象的状态发生改变时，所有依赖于它的对象都得到通知并被自动跟新。</p>
+<p><strong>模板模式</strong>：</p>
+<p>定义一个操作的算法骨架，而将一些步骤延迟到子类中，模版方法使得子类可以不改变一个算法的结构即可重定义该算法的某些特定步骤。</p>
+<p><strong>命令模式：</strong></p>
+<p>将一个请求封装为一个对象，从而使你可用不同的请求对客户进行参数化：可用对请求排队或记录请求日志，以及支持可撤销的操作。</p>
+<p><strong>状态模式</strong>：</p>
+<p>允许一个对象在其内部状态改变时改变它的行为，让对象看起来似乎修改了它的类、</p>
+<p><strong>责任链模式</strong>：</p>
+<p>使多个对象都有机会处理请求，从而避免请求的发送者和接收者之间的耦合关系、将这些对象连成一条链，并沿着这条链传递请求，直到有一个对象处理为止。</p>
+<p><strong>策略模式</strong>：<br>策略模式是定义一系列算法，算法都是完成相同的工作，只是实现方式不同，我们可以以相同的方式调用这些算法，从而减少算法类和使用算法类之间的耦合度。</p>
+<p><strong>优点：</strong><br>策略模式简化了单元测试，因为每个算法都有自己的类，可以通过自己的接口单独测试。</p>
+<p><strong>单一职责原则：</strong><br>对于一个类而言，应该仅有一个引起它变化的原因。</p>
+<p><strong>依赖倒置原则：</strong><br>高层模块不应该依赖底层模块，两个都应该依赖抽象。抽象不应该依赖细节，细节应该依赖抽象。</p>
+<p><strong>解释器模式：</strong><br>给定一个语言，定义它的文法的一种表示，并定义一个解释器，这个解释器使用该表示来解释语言中的句子。</p>
+<p><strong>中介者模式：</strong><br>用一个中介对象来封装一系列的对象交互。中介者使各对象不需要显示地相互引用，从而使其耦合松散，而且可以独立地改变它们之间的交互。</p>
+<p><strong>访问者模式</strong>：</p>
+<p>一个作用于某对象结构中的个元素的操作。它使你可以在不改变各元素的类的前提下定义作用于这些元素的新操作。</p>
+<p><strong>策略模式</strong>：</p>
+<p>定义一系列的算法，把它们一个个封装起来，并且使它们可相互替换。本模式是的算法可独立于使用它的客户而变化。</p>
+<p><strong>备忘录模式</strong></p>
+<p>在不破坏封装的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态，这样以后就可将该对象恢复到原先保存的状态。</p>
+<p><strong>迭代器模式</strong></p>
+<p>提供一种方法顺序访问一个聚合对象中各个元素，而又不需要暴露的内部表示。</p>
+]]></content>
+      <categories>
+        <category>后端开发</category>
+      </categories>
+      <tags>
+        <tag>设计模式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的第一网页</title>
+    <url>/2019/12/19/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%BD%91%E9%A1%B5/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2019/12/19/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+</search>
